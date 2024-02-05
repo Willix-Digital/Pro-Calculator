@@ -1,0 +1,225 @@
+/*
+*****************************************************************************
+     -----GENERAL-----
+******************************************************************************
+*/
+body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #5a6779;
+    border: none;
+}
+.néomorphisme{
+    font-weight: bolder;
+    padding: 20px 20px;
+    border-radius: 15px;
+    background: #e0e0e0;
+    box-shadow:  8px 8px 16px #c5c5c5,
+                 -8px -8px 16px #fbfbfb;
+    transition: all .3s;
+}
+
+.néomorphisme:hover{
+    font-weight: bolder;
+    padding: 20px 20px;
+    border-radius: 15px;
+    background: #e0e0e0;
+    box-shadow:  8px 8px 16px #d3d3d3,
+                 -8px -8px 16px #ededed;
+}
+
+button{
+    font-size: 20px;
+    margin: auto;
+    border: none;
+    height:70px;
+    width: 70px;
+}
+/*
+*****************************************************************************
+     -----calculatrice-----
+******************************************************************************
+*/
+.calcul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    max-width:1200px ;
+    margin: auto;
+    padding: 40px;
+    list-style: none;
+    
+}
+.calculatrice{
+    background-color: #e0e0e0;
+    height: auto;
+    width: 390px;
+    margin: auto;
+    padding: 15px 0;
+    border-radius: 20px;
+}
+/* -----calculatrice-----*/
+.zones-saisie{
+    height: 120px;
+    width: 90%;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    border:  1px solid black;
+    border-radius: 15px;
+}
+
+
+.number{
+    height: 50px;
+    width: 100%;
+    font-size: 40px;
+    color: black;
+    padding: 10px 0;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    text-align: right;
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+input::placeholder {
+    color: black;
+    border-style: none;
+  }
+
+  input:focus{
+    border: none;
+    background-image: none;
+}
+/* -----prm-----*/
+.paramètre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    gap: 10px;
+}
+.fal-1x{
+    color: black;
+    font-size: 20px;
+    width: 70px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.fa-delete-left{
+    font-size: 20px;
+    color: green;
+    margin: auto;
+}
+.prm{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+/* -----button-----*/
+.button{
+    width: auto;
+    height: 480px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.btn-del{
+    margin: 2px;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-parametre  i {
+   margin: auto;
+   color: orange;
+}
+.btn-par{
+    color: green;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-par2{
+    color: green;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn-nm{
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn-plusoumoins{
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn-égal{
+    color: green;    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn-parametre{
+    height:450px;
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.btn-point{
+    color: green;    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.bntnull {
+    width: 170px;
+    grid-column: span 2; 
+    text-align: left
+}
+
+
+
+
+
+
