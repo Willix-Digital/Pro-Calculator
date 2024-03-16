@@ -30,6 +30,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Gestion des événements pour les boutons numériques
+  btnAc.addEventListener("click", function () {
+    zonesSaisie.value = "0";
+    affichageOperation.innerHTML = "";
+  });
+
   btnZero.addEventListener("click", function () {
     handleButtonClick("0");
     affichageOperation.innerHTML += "0";
@@ -105,9 +110,13 @@ document.addEventListener("DOMContentLoaded", function () {
     affichageOperation.innerHTML += "*";
   });
 
+  function evaluerExpressionMath(expression) {
+    return eval(expression);
+  }
+
   btnEqual.addEventListener("click", function () {
-    somme = eval(zonesSaisie.value);
-    zonesSaisie.value = somme;
-    affichageOperation.innerHTML = zonesSaisie.value;
+    const resultat = evaluerExpressionMath(zonesSaisie.value);
+    zonesSaisie.value = resultat;
+    affichageOperation.innerHTML = resultat;
   });
 });

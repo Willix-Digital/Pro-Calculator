@@ -59,10 +59,14 @@ button{
     margin: auto;
     padding: 15px 0;
     border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 /* -----calculatrice-----*/
 .zones-saisie{
-    height: 120px;
+    height: 140px;
     width: 90%;
     text-align: center;
     display: flex;
@@ -79,7 +83,7 @@ button{
     right: 0;
     top: 0;
     padding-right:10px ;
-    font-size: 15px;
+    font-size: 20px;
     width: auto;
 }
 
@@ -92,15 +96,16 @@ button{
     padding-top: 20px;
     border: none;
     border-radius: 10px;
-    margin: auto;
     text-align: right;
     background-color: #e0e0e0;
     margin-bottom: 20px;
+    margin: auto;
 }
 
 input::placeholder {
     color: black;
     border-style: none;
+    border: 1px solid transparent;
   }
 
   input:focus{
@@ -116,7 +121,7 @@ input::placeholder {
     gap: 10px;
 }
 .fal-1x{
-    color: black;
+    color: #D0A2F7;
     font-size: 20px;
     width: 70px;
     height: 35px;
@@ -165,10 +170,10 @@ input::placeholder {
 
 .btn-parametre  i {
    margin: auto;
-   color: orange;
+   color: #FF8911;
 }
 .btn-par{
-    color: green;
+    color: #7F27FF;
     font-weight: bold;
     cursor: pointer;
     font-size: 20px;
@@ -178,7 +183,7 @@ input::placeholder {
 }
 
 .btn-par2{
-    color: green;
+    color: #7F27FF;
     font-weight: bold;
     cursor: pointer;
     font-size: 20px;
@@ -199,7 +204,8 @@ input::placeholder {
 }
 
 .btn-égal{
-    color: green;    font-weight: bold;
+    color: #7F27FF;
+    font-weight: bold;
     cursor: pointer;
     font-size: 20px;
 }
@@ -219,7 +225,8 @@ input::placeholder {
 }
 
 .btn-point{
-    color: green;    font-weight: bold;
+    color: #7F27FF;
+    font-weight: bold;
     cursor: pointer;
     font-size: 20px;
 }
@@ -233,5 +240,18 @@ input::placeholder {
 
 
 
+.headsystème{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 85%;
+    height: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 25px;
+    color: #FF8911;
+}
 
-
+.btnparamètre:hover{
+    color: #ff8811a4;
+}
